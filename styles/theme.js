@@ -28,4 +28,8 @@ const theme = createMuiTheme({
   },
 });
 
+<<<<<<< HEAD
 export default theme;
+=======
+export default theme;
+>>>>>>> 08ac4602d7f037508c347cd730cc6e70ed5ecc5c
