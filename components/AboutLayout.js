@@ -5,9 +5,10 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     
     paper: {
-      padding: theme.spacing(2),
+      padding: theme.spacing(3),
       textAlign: 'center',
       color: theme.palette.text.secondary,
+      width:"30vw"
     },
   }));
 
