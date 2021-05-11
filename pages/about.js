@@ -1,9 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
+
 import Grid from '@material-ui/core/Grid';
 import path from '../components/path';
 import Head from 'next/head';
+import AboutLayout from '../components/AboutLayout';
 
 export const getStaticProps = async () =>{
     const res =  await fetch(`${path}about`);
@@ -18,11 +19,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     paddingTop:"20px",
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
+  
 }));
 
  const  about = ({aboutData}) => {
@@ -38,20 +35,14 @@ const useStyles = makeStyles((theme) => ({
       <Grid container spacing={3}>
         
        {aboutData.map(data=>{
-           return(<>
-           <Grid   item xs={12} md={6}>
-                <Paper className={classes.paper} elevation={0}>
-                    <img src={data.image} alt={data.title} width={440} height={200} />
-                </Paper>
-            </Grid>
-           <Grid  item xs={12} md={6}>
-                <Paper className={classes.paper} elevation={0}>
-                    <h1>{data.title}</h1>
-                    <h3>{data.describe}</h3>
-                </Paper>
-            </Grid>
+           return(
            
-          </>
+           <AboutLayout 
+           key = {data._id}
+           image = {data.image}
+           title = {data.title}
+           describe = {data.describe} />
+           
            )
        })}
        
@@ -60,4 +51,4 @@ const useStyles = makeStyles((theme) => ({
   );
 }
 
-export default about
+export default about;
