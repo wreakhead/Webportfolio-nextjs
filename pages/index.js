@@ -28,7 +28,7 @@ const Home = () => {
     <Grid container spacing={3}>
             <Grid   item xs={12} md={6}>
                 <Paper className={classes.paper} elevation={0}>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmaxcdn.icons8.com%2Fapp%2Fuploads%2F2019%2F06%2Fdigital-illustration-brian-edward-miller-21.jpg&f=1&nofb=1" alt="hello_image" style={{minWidth:"30vw"}} height={200} />
+                    <img src="https://raw.githubusercontent.com/wreakhead/WebPortfolio/main/portfolio-client/src/images/HuionSketch_1620735415946.png" alt="hello_image" style={{minWidth:"30vw"}} height={200} />
                 </Paper>
             </Grid>
            <Grid  item xs={12} md={6}>
