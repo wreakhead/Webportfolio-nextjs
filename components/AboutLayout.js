@@ -17,7 +17,7 @@ const AboutLayout = (data)=>{
         <>
         <Grid   item xs={12} md={6}>
                 <Paper className={classes.paper} elevation={0}>
-                    <img src={data.image} alt={data.title} style={{minWidth:"90vw"}} height={200} />
+                    <img src={data.image} alt={data.title} style={{minWidth:"40vw"}} height={230} />
                 </Paper>
             </Grid>
            <Grid  item xs={12} md={6}>
