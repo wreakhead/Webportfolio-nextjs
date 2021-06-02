@@ -13,12 +13,11 @@ const useStyles = makeStyles({
     justifyContent: "center",
     display: "flex",
     marginTop: "100px",
-    
-    
+
     background: "#212121",
     color: "#fff",
   },
-  
+
   pos: {
     marginBottom: 14,
   },
@@ -29,8 +28,8 @@ const Contact = () => {
 
   return (
     <Grid container>
-      <Grid item xs={12} >
-      <Card className={classes.root} elevation={0}>
+      <Grid item xs={12}>
+        <Card className={classes.root} elevation={0}>
           <CardContent style={{ height: "300" }}>
             <Typography variant="h5" component="h2">
               LinkedIn{" "}

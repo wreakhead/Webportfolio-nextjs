@@ -6,8 +6,7 @@ const useStyles = makeStyles({
   btnStyle: {
     fontWeight: "500",
     fontSize: "12px",
-    
-    background:'#212121',
+    background: "#212121",
     display: "inline-block",
     padding: "5px 10px",
     borderRadius: "50px",
@@ -23,11 +22,8 @@ const useStyles = makeStyles({
   },
 });
 
-const  SmallButtonTwo=(props)=> {
+const SmallButtonTwo = (props) => {
   const classes = useStyles();
-  
-  
-  
 
   return (
     <>
@@ -36,6 +32,6 @@ const  SmallButtonTwo=(props)=> {
       </a>
     </>
   );
-}
+};
 
 export default SmallButtonTwo;

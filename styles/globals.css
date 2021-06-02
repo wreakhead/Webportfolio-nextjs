@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 
 body {
   background: #424242;
   color: #f2f2f2;
   font-family: "Nunito";
-  
-  
 }
 a {
   color: #f2f2f2;
@@ -13,36 +11,59 @@ a {
 }
 
 nav {
-  
   padding: 2px 0;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  border-bottom: 1px solid #b2ff59; 
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #b2ff59;
 }
 nav a {
   margin-left: 12px;
 }
-nav a:hover{
-  color:#b2ff59;
-  
+nav a:hover {
+  color: #b2ff59;
 }
-nav .logo{
-  margin-right:20px;
+nav .logo {
+  margin-right: 20px;
 }
 
 .menuActive {
   font-weight: bold;
-  color:#b2ff59;
- 
- }
- .logoActive{
+  color: #b2ff59;
+}
+.logoActive {
   color: #f2f2f2;
- }
+}
 
+/* neontext */
 
+.neonText {
+  color: #fff;
+  animation: flicker 1.5s infinite alternate;
 
+  font-size: 45px;
+}
+.containerNeon {
+  padding-top: 12%;
+  justify-content: center;
+  display: flex;
+}
 
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #76ff03,
+      0 0 65px #76ff03, 0 0 70px #76ff03, 0 0 75px #76ff03;
+  }
 
-
- 
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
